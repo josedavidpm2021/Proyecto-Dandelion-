@@ -1,0 +1,34 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    ext.kotlin_version = "1.6.10"
+    ext.hilt_version = "2.38.1"
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.1.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.0"
+        classpath ("com.google.dagger:hilt-android-gradle-plugin:2.42"){
+            because('This is for Hilt DI, project level')
+        }
+    }
+}
+
+plugins {
+    id 'com.android.application' version '7.2.1' apply false
+    id 'com.android.library' version '7.2.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.7.0' apply false
+    id 'com.google.dagger.hilt.android' version '2.42' apply false
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin' version '2.0.1' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    roomVersion = "2.4.2"
+    camerax_version = "1.1.0-beta01"
+    hilt_version = "2.42"
+    kotlin_version = "1.6.10"
+}
