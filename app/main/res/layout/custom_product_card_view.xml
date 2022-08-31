@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingTop="14dp"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/productCardView_linearLayout_actionReflector"
+        android:layout_width="6dp"
+        android:layout_height="match_parent"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/productCardView_textView_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="14dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/productCardView_cardView_photo"
+        app:layout_constraintStart_toEndOf="@id/productCardView_linearLayout_actionReflector"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/productCardView_textView_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/roboto_light"
+        android:layout_marginStart="14dp"
+        app:layout_constraintStart_toEndOf="@id/productCardView_linearLayout_actionReflector"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@id/productCardView_cardView_photo"
+        app:layout_constraintTop_toBottomOf="@id/productCardView_textView_name"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/productCardView_textView_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="14dp"
+        app:layout_constraintStart_toEndOf="@id/productCardView_linearLayout_actionReflector"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/productCardView_cardView_photo"
+        app:layout_constraintEnd_toStartOf="@id/productCardView_cardView_photo"
+        app:layout_constraintTop_toBottomOf="@id/productCardView_textView_description"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/productCardView_cardView_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/productCardView_textView_name"
+        app:layout_constraintBottom_toBottomOf="@id/productCardView_textView_price"
+        app:cardCornerRadius="20dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/productCardView_imageView_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

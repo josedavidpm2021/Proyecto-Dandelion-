@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/restaurantCardView_imageView_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/restaurant_photo"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/restaurantCardView_layout_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/restaurantCardView_imageView_photo"
+        android:paddingHorizontal="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/grey_super_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/restaurantCardView_textView_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/restaurantCardView_textView_price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/restaurantCardView_textView_time"
+            app:layout_constraintBottom_toBottomOf="@id/restaurantCardView_textView_time"
+            android:text="@string/stores_shipping_rate"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/ic_box2_fill_20"
+            app:drawableTint="@color/md_theme_light_primary"
+            android:drawablePadding="12dp"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/restaurantCardView_textView_time"
+            app:layout_constraintStart_toEndOf="@id/restaurantCardView_textView_price"
+            app:layout_constraintTop_toBottomOf="@id/restaurantCardView_textView_title"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_baseline_access_time_filled_24"
+            android:layout_marginStart="20dp"
+            app:drawableTint="@color/black"
+            android:drawablePadding="12dp"
+            android:text="Hola wey"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

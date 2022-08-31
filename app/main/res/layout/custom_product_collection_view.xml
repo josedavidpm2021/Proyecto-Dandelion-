@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/productCollectionView_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_medium"
+        app:drawableTint="@color/md_theme_light_primary"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_baseline_circle_8"
+        android:elegantTextHeight="true"
+        android:text="@string/custom_product_collection_view_name"
+        android:layout_marginStart="14dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/productCollectionView_containerLayout"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/productCollectionView_containerLayout"
+        app:layout_constraintTop_toBottomOf="@id/productCollectionView_title"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/dandelionFragment">
+
+    <fragment
+        android:id="@+id/dandelionFragment"
+        android:name="com.tongue.dandelion.ui.fragments.DandelionFragment"
+        android:label="fragment_dandelion"
+        tools:layout="@layout/fragment_dandelion" >
+        <action
+            android:id="@+id/action_dandelionFragment_to_storesFragment"
+            app:destination="@id/storesFragment" />
+        <action
+            android:id="@+id/action_dandelionFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/storeMenuFragment"
+        android:name="com.tongue.dandelion.ui.fragments.StoreMenuFragment"
+        android:label="fragment_store_menu"
+        tools:layout="@layout/fragment_store_menu" >
+        <action
+            android:id="@+id/action_storeMenuFragment_to_lineItemFragment"
+            app:destination="@id/lineItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lineItemFragment"
+        android:name="com.tongue.dandelion.ui.fragments.LineItemFragment"
+        android:label="fragment_line_item"
+        tools:layout="@layout/fragment_line_item" />
+    <fragment
+        android:id="@+id/shippingFragment2"
+        android:name="com.tongue.dandelion.ui.fragments.ShippingFragment"
+        android:label="fragment_shipping"
+        tools:layout="@layout/fragment_shipping" />
+    <fragment
+        android:id="@+id/storesFragment"
+        android:name="com.tongue.dandelion.ui.fragments.StoresFragment"
+        android:label="fragment_stores"
+        tools:layout="@layout/fragment_stores" >
+        <action
+            android:id="@+id/action_storesFragment_to_storeMenuFragment"
+            app:destination="@id/storeMenuFragment" />
+        <action
+            android:id="@+id/action_storesFragment_to_shoppingCartFragment"
+            app:destination="@id/shoppingCartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.tongue.dandelion.ui.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_storesFragment"
+            app:destination="@id/storesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoppingCartFragment"
+        android:name="com.tongue.dandelion.ui.fragments.ShoppingCartFragment"
+        android:label="fragment_shopping_cart"
+        tools:layout="@layout/fragment_shopping_cart" >
+        <action
+            android:id="@+id/action_shoppingCartFragment_to_checkoutFragment"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.tongue.dandelion.ui.fragments.CheckoutFragment"
+        android:label="fragment_checkout"
+        tools:layout="@layout/fragment_checkout" >
+        <action
+            android:id="@+id/action_checkoutFragment_to_shippingFragment2"
+            app:destination="@id/shippingFragment2" />
+    </fragment>
+
+</navigation>

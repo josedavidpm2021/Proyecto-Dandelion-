@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_baseline_shopping_cart_24"
+        android:backgroundTint="@color/black"
+        android:tint="@color/black"
+        android:layout_width="28dp"
+        android:layout_height="28dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_storeName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView_icon"
+        android:text="Sushi Alex 6 de Diciembre"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_storeAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_storeName"
+        android:text="Dirección: Avenida 6 de diciembre y avenida shyris"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_customerAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_storeAddress"
+        android:text="Entregar en: Nayon 6 de diciembre"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMiddle"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_reject"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelineMiddle"
+        app:layout_constraintTop_toBottomOf="@id/textView_customerAddress"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constrainedWidth="true"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:text="Rechazar"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textAllCaps="false"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_accept"
+        app:layout_constraintStart_toEndOf="@id/guidelineMiddle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_customerAddress"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constrainedWidth="true"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        app:backgroundTint="@color/md_theme_light_primary"
+        android:textColor="@color/white"
+        android:text="Aceptar"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textAllCaps="false"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

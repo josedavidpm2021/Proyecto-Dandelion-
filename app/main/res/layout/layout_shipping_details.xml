@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_storeName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Sushi Alex 6 de Diciembre"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_summary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageView_store"
+        app:layout_constraintTop_toBottomOf="@id/textView_storeName"
+        android:layout_width="match_parent"
+        app:layout_constrainedWidth="true"
+        android:layout_marginTop="14dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_time"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="6 minutos"
+            android:fontFamily="@font/roboto_light"
+            android:drawableStart="@drawable/ic_baseline_timer_24"
+            android:layout_marginTop="10dp"
+            app:drawableTint="@color/black"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_address"
+            app:layout_constraintTop_toBottomOf="@id/textView_time"
+            android:text="Avenida 6 de Diciembre y Avenida Shyris"
+            android:fontFamily="@font/roboto_light"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:layout_marginTop="10dp"
+            app:drawableTint="@color/black"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_vertical_line"
+            app:layout_constraintTop_toBottomOf="@id/textView_address"
+            android:fontFamily="@font/roboto_light"
+            android:drawableStart="@drawable/ic_baseline_more_vert_24"
+            android:layout_marginTop="10dp"
+            app:drawableTint="@color/black"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_origin"
+            app:layout_constraintTop_toBottomOf="@id/textView_vertical_line"
+            android:text="Nayon Quito"
+            android:fontFamily="@font/roboto_light"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:layout_marginTop="10dp"
+            app:drawableTint="@color/black"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView_store"
+        app:layout_constraintTop_toTopOf="@id/constraintLayout_summary"
+        app:layout_constraintBottom_toBottomOf="@id/constraintLayout_summary"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_store"
+        android:layout_marginEnd="8dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_total_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textView_total_value"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout_summary"
+        android:text="@string/shipping_total"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_total_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout_summary"
+        android:text="5.80$"
+        android:textColor="@color/md_theme_light_primary"
+        android:textSize="16sp"
+        android:layout_marginEnd="8dp"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

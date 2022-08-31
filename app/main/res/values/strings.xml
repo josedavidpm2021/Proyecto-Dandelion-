@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Dandelion</string>
+    <string name="app_name_title"><font face='roboto_condensed_bold' color="#FF545E" >D</font>andelion</string>
+    <string name="stores_title">%1$s que bueno tenerte aquí!</string>
+    <string name="stores_enjoy_message">Disfruta lo que Dandelion tiene por ofrecerte</string>
+    <string name="stores">Restaurantes</string>
+    <string name="stores_address">Dirección del cliente</string>
+    <string name="stores_button_order_details">Detalles del pedido</string>
+    <string name="stores_shipping_rate"><font face='roboto_condensed_regular'>Costo de envío: </font><font face='robot_medium'>%1$s\$</font></string>
+    <string name="custom_store_description_view_title">Restaurant name</string>
+    <string name="custom_store_description_view_address">Dirección: %1$s</string>
+    <string name="custom_store_description_view_arrival_time">Tiempo de entrega: %1$d-%2$d min</string>
+    <string name="custom_store_description_view_shipping_fee">Costo de envío: %1$s\$</string>
+    <string name="custom_store_description_menu">Menú</string>
+    <string name="custom_product_collection_view_name">Collection name</string>
+    <string name="login_app_name">Dandelion</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="login_description">Utiliza tu cuenta de Google para iniciar sesión</string>
+    <string name="login_google_button">Continuar con Google</string>
+    <string name="checkout_finish_shopping">Finalizar Compra</string>
+    <string name="checkout_products">Productos</string>
+    <string name="checkout_address">Dirección de entrega:</string>
+    <string name="checkout_amount_to_pay">Cantidad a pagar:</string>
+    <string name="checkout_payment_method">Método de pago</string>
+    <string name="checkout_payment_method_cash">Efectivo</string>
+    <string name="checkout_payment_method_credit_card">Tarjeta de crédito</string>
+    <string name="line_item_product_name">Product name</string>
+    <string name="line_item_product_description">Product description</string>
+    <string name="line_item_product_price_label">Precio</string>
+    <string name="line_item_delivery_time_label">Tiempo de entrega</string>
+    <string name="line_item_product_price_value">%1$s\$</string>
+    <string name="line_item_delivery_time_value">%1$d-%2$d min</string>
+    <string name="line_item_button_add_to_cart">Añadir al pedido %1$s\$</string>
+    <string name="line_item_quantity">1</string>
+    <string name="shopping_cart">Canasta</string>
+    <string name="shopping_cart_button_clean">Limpiar canasta</string>
+    <string name="shopping_cart_button_add_articles">Añadir artículos</string>
+    <string name="shopping_cart_note">Añade una nota para el restaurante</string>
+    <string name="shopping_cart_button_shipping_details">Ver detalles del envío</string>
+    <string name="shipping_title">Siga su pedido</string>
+    <string name="shipping_searching">Conectando...</string>
+    <string name="shipping_searching_drivers">Buscando conductores...</string>
+    <string name="shipping_total">Total</string>
+    <string name="custom_line_item_view_name">Product name</string>
+    <string name="custom_line_item_view_subtotal">Subtotal %1$s\$</string>
+    <string name="custom_line_item_view_quantity">Cantidad</string>
+</resources>
